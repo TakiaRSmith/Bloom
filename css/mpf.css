@@ -1,0 +1,271 @@
+/* margin padding float */
+
+:root {
+    --HFColor: #26292e;
+    --IconColor: black;
+    --Sect1BColor: #e7718b;
+    --text:  #596573;
+    --ButtonColor1: #2a2c2b;
+    --ButtonColor2: #4f5150; 
+    --ButtonColorOutline: #8b8a88;
+    --LogoFont: 'Butterfly Kids', cursive;
+    --TextFont: 'Open Sans Condensed', sans-serif; 
+    
+}
+
+/* icons */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}  
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+========================================== */
+
+.icon-bubbles2 {
+    width: 1.25em; 
+}
+
+
+.header a, .footer a {
+    padding: 12px; 
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icon-facebook, .icon-twitter, .icon-rss {
+    color: var(--IconColor);
+    font-size: 20px;
+}
+
+/* close icons */
+
+/* generic */
+
+* {box-sizing: border-box;}
+
+body {
+        margin: 0;
+        padding: 0;   
+} 
+    
+.inner {
+        width: 960px;
+        margin: 0 auto;
+}
+
+    /* close generic */
+    
+    
+    /* header */
+    
+.header {
+        margin-bottom: 100px; 
+        height: 10vh; 
+}
+
+.header, .footer {
+    margin: 0;
+    padding: 0;
+    background-color: var(--HFColor);
+    /* border: 1px solid red;  */
+}
+
+.top-nav {
+    float: right;
+    margin-top: -60px;
+    /* border: 1px solid red; */
+    
+}
+
+.logo {
+    margin: 0;
+    color: white;
+    font-family: var(--LogoFont);
+    font-size: 55px;
+    text-transform: capitalize;
+    /* border: 1px solid red; */
+ }
+
+.so-list-item {
+    display: inline;
+}
+
+.sr-only {
+     display: none; 
+}
+
+.clear {
+    clear: both;
+}
+/* close header */
+
+/* main */
+.main .inner {
+    font-family: var(--TextFont);
+}
+
+.sub-header1 {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    font-weight: bold;
+     /* border: 1px solid red; */
+}
+
+.section1 {
+    height: 48vh;
+    padding-top: 20px; 
+    color: white;
+    font-size: 15px;
+    background-color: var(--Sect1BColor);
+    font-family: var(--TextFont);
+    /* border: 1px solid orange; */
+    /* border: 1px solid red; */
+}
+
+.button {
+    border-radius: 8px;
+    margin-right: 20px; 
+    padding: 10px;
+    line-height: 1;
+    text-transform: capitalize; 
+    color: white;
+    font-family: var(--TextFont);
+    background: linear-gradient(#8b8a88, #4f5150, #2a2c2b);
+}
+
+.block1 {
+    float: left;
+    width: 50%;
+}
+
+.block1-text {
+    width: 90%;
+    /* border: 1px solid red; */
+}
+
+.landing-img {
+     width: 525px;  
+     height: auto;
+}
+
+.block2 {
+    float: right;
+    margin-top: -290px;
+    width: fit-content;
+    /* border: 1px solid blue; */
+}
+.section2 {
+    height: 34vh;
+    font-size: 14px;
+    padding-top: 30px;
+    color: var(--text);
+    background-color: #f4f4f6;
+    border-bottom: 12px solid #f7e4e8;
+}
+
+.sub-header-section2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: var(--IconColor);
+}
+
+.block3, .block4, .block5 {
+    float:left;
+    width: 32%;
+    /* border: 1px solid red; */
+}
+
+.block4, .block5 {
+    margin-left: 19px;  
+   /* border: 1px solid red;  */
+}
+
+.section3 {
+    height: 55vh;
+    /* border: 1px solid red; */
+}
+
+ .product {
+    float: left;
+    width: 200px;
+    height: 120px; 
+    margin-bottom: 70px;
+    background: var(--ButtonColor2);
+    border: 10px solid lightgray;
+    box-shadow: 0 6px 8px -4px;     
+} 
+
+.products {
+    width: 60%;
+}
+
+.product:nth-child(2) {
+    margin-left: 100px;
+}
+
+.product:nth-child(4) {
+    margin-left: 100px;
+}
+
+.icon-search {
+    color: white;
+    display: block;
+    margin: 15% auto;
+    font-size: 35px;
+}
+
+.aside {
+    float: right;
+    margin-top: -250px;
+    width:33%;
+    /* border: 1px solid red; */
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.block6 {
+     height: 30vh; 
+}
+
+/* close main */
+
+/* footer */
+
+.footer {
+    height: 10vh;
+}
+
+.footer-nav {
+    float: right;
+    width: 25%;
+    margin-top: -60px; 
+    /* border: 1px solid red; */
+}
+
+.colophon {
+    color: white;
+    margin-top: -30px; 
+    width: 40%;
+    /* border: 1px solid red; */
+}
+
+/* close footer */
+
+
+
+

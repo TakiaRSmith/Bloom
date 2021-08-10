@@ -1,0 +1,261 @@
+/* flexbox */
+
+
+:root {
+    --HFColor: #26292e;
+    --IconColor: black;
+    --Sect1BColor: #e7718b;
+    --text:  #596573;
+    --ButtonColor1: #2a2c2b;
+    --ButtonColor2: #4f5150; 
+    --ButtonColorOutline: #8b8a88;
+    --LogoFont: 'Butterfly Kids', cursive;
+    --TextFont: 'Open Sans Condensed', sans-serif; 
+    
+}
+
+/* icons */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}  
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+========================================== */
+
+.icon-bubbles2 {
+    width: 1.25em; 
+}
+
+.header a, .footer a {
+    padding: 12px; 
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icon-facebook, .icon-twitter, .icon-rss {
+    color: var(--IconColor);
+    font-size: 20px;
+}
+
+/* close icons */
+
+/* generic */
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;   
+} 
+
+.inner {
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* close generic */
+
+/* header */
+
+.header, .footer {
+    margin: 0;
+    padding: 0;
+    background-color: var(--HFColor);
+    /* border: 1px solid red; */
+}
+
+.header {
+    margin-bottom: -15px;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-family: var(--LogoFont);
+    margin-top: 5px;
+    font-size: 55px;
+    text-transform: capitalize;
+    /* border: 1px solid red; */
+}
+
+
+.so-list-item {
+    display: inline;  
+}
+
+.top-nav {
+    margin-top: 15px;
+    margin-right: 75px;  
+    /* border: 1px solid red;   */
+}
+
+.sr-only {
+    display: none;
+}
+
+/* close header */
+
+/* main */
+.main .inner {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--TextFont);
+}
+.sub-header1 {
+    font-size: 35px;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+
+.section1 {
+    color: white;
+    font-size: 15px;
+    background-color: var(--Sect1BColor);
+    font-family: var(--TextFont);
+    /* border: 1px solid orange;  */
+}
+
+.button {
+    border-radius: 8px;
+    margin-right: 20px; 
+    padding: 10px;
+    line-height: 1;
+    text-transform: capitalize; 
+    color: white;
+    font-family: var(--TextFont);
+    background: linear-gradient(#8b8a88, #4f5150, #2a2c2b);
+}
+
+.block1-text {
+    width: 45%;
+    /* border: 1px solid red; */
+}
+
+.section2 {
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 20px; 
+    color: var(--text);
+    background-color: #f4f4f6;
+    border-bottom: 12px solid #f7e4e8;
+}
+
+.sub-header-section2 {
+    font-size: 20px;
+    color: var(--IconColor);
+}
+
+.block3, .block4, .block5 {
+    width: calc(100 / 3);
+}
+
+ .block4, .block5 {
+    margin-left: 25px; 
+    /* border: 1px solid red; */
+ }
+
+.landing-img {
+    width: 525px; 
+    margin-top: 20px;
+    height: auto;
+}
+
+
+.section3 {
+    /* border: 1px solid green; */
+}
+.products {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;   
+}
+
+ .product {
+    width: 200px;
+    height: 120px; 
+    margin-bottom: 70px;
+    background: var(--ButtonColor2);
+    border: 10px solid lightgray;
+    box-shadow: 0 6px 8px -4px; 
+} 
+
+.icon-search {
+    color: white;
+    display: block;
+    margin: 15% auto;
+    font-size: 35px;
+}
+
+.sub-header-section3 {
+    margin-left: 5px;
+}
+
+.aside {
+    width:30%;
+    height: 43vh;
+    margin-right: 40px;
+    /* border: 1px solid red; */
+}
+
+.aside-text {
+     font-size: 17px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* close main */
+
+/* footer */
+
+.footer {
+    padding: 0;
+    margin-bottom: 0;
+    height: 8vh; 
+    /* border: 1px solid red; */
+}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.footer-nav {
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 800px; 
+    /* border: 1px solid red; */
+}
+
+.colophon {
+    margin-top: 10px; 
+    margin-left: 10px;
+    color: white;
+    width: 60%;
+    font-size: 12px;
+    /* border: 1px solid red; */
+}
+
+/* close footer */
+
+
+
+
+
